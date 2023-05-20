@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="content">
+    <h2>WELCOME TO</h2>
+    <h1 class="title">TeachMeAnything.AI
+      <div class="aurora">
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+      </div>
+    </h1>
+  </div>
+  <h2 class="start" id="dtr"></h2>
+  <div>
+    <div class="login-box">
+      <form id="emailForm">
+        <div class="search-container">
+          <input type="email" id="search-bar" placeholder="Enter your Email">
+        </div>
+        <div class="button-wrapper">
+          <span></span>
+          <span></span>
+          <span></span>
+          <button class="custom-btn btn-13" type="submit" onclick="fun()">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.1.0/firebase.js"></script>
+  <script>
+
+    function fun() {
+        var begin = document.getElementById('dtr');
+        begin.textContent="You have been added to the waitlist";
+    }
+  </script>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
